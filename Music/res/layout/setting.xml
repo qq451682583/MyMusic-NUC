@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9D9C2"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/head">
+        <Button 
+            android:id="@+id/settingback"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/back"/>
+        <TextView
+            android:id="@+id/setmusicnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:textAlignment="center"
+            android:layout_marginRight="40dp"
+            android:textColor="#FFFFFF"
+            android:text="更多"
+            android:textSize="22sp" />
+        
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/GridViewshow"
+        android:layout_width="match_parent"
+        android:layout_height="238dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="#E9D9C2"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" >
+    </GridView>
+
+    <GridView
+        android:id="@+id/GridViewshow1"
+        android:layout_width="wrap_content"
+        android:layout_height="171dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="#E9D9C2"
+        android:columnWidth="150dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:stretchMode="none"
+        android:verticalSpacing="10dp" >
+    </GridView>
+	
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="0dp"
+	    android:layout_marginTop="10dp"
+	    >
+	    <Button android:id="@+id/exit"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="退出"
+	        android:textSize="25sp"
+	        android:layout_marginLeft="15dp"
+        	android:layout_marginRight="15dp"
+	        android:gravity="center_horizontal|center_vertical"
+	        android:background="@color/blue"
+	        ></Button>
+	</LinearLayout>
+
+</LinearLayout>

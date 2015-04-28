@@ -1,0 +1,214 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sliding_bg"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/textlogin111"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"      
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        android:text="登录"
+        android:textColor="@android:color/white"
+  	    android:gravity="center_horizontal|center_vertical"
+  	    android:background="@android:color/transparent"
+        />	
+	<LinearLayout
+	    android:id="@+id/Gongnengqu1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Gongnengqu"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp" >
+
+        <Button
+            android:id="@+id/Yueku"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/yueku" />
+
+        <Button
+            android:id="@+id/btnGeshou"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/geshou" />
+
+    </LinearLayout>	
+    
+	<LinearLayout
+	    android:id="@+id/Gongnengqu2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Gongnengqu1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="1dp" >
+
+        <Button
+            android:id="@+id/btnGengduo"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/more" />
+
+        <Button
+            android:id="@+id/btnMv"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/mv" />
+
+    </LinearLayout>	
+    
+    <SeekBar
+	    android:id="@+id/jindubar"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/Gongnengqu2"
+	    android:layout_marginTop="10dp"
+	    >
+	</SeekBar>
+    <LinearLayout
+        android:id="@+id/timeview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/jindubar">
+        <TextView
+            android:id="@+id/currenttime"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.54"
+            android:gravity="left"
+            android:text="00:00"
+            android:textColor="#999999" />
+		<TextView
+            android:id="@+id/number"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.54"
+            android:gravity="left"
+            android:text="0/0"
+            android:textColor="#999999" />
+        <TextView
+            android:id="@+id/alltime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="0dp"
+            android:text="00:00" 
+            android:textColor="#999999"/>
+    </LinearLayout>
+    <ListView 
+        android:id="@+id/list1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"></ListView>"
+    
+    
+
+    <TextView
+        android:id="@+id/nametext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Gongnengqu"
+        android:layout_below="@+id/textlogin111"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/green"
+        android:textSize="23sp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Gongnengqu2"
+        android:layout_alignRight="@+id/Gongnengqu2"
+        android:layout_below="@+id/timeview"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/aixin"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5px"
+            android:background="@drawable/aixin" />
+
+        <Button
+            android:id="@+id/preone"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_marginLeft="15px"
+            android:background="@drawable/last1" />
+
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_marginLeft="15px"
+            android:background="@drawable/play1" />
+
+        <Button
+            android:id="@+id/nextone"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_marginLeft="15px"
+            android:background="@drawable/next1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Gongnengqu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Gongnengqu1"
+        android:layout_alignRight="@+id/Gongnengqu1"
+        android:layout_below="@+id/nametext"
+        android:layout_marginTop="38dp" >
+
+        <Button
+            android:id="@+id/butMylove"
+            android:layout_width="74dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/mylove" />
+
+        <Button
+            android:id="@+id/btnMylist"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/mygedan" />
+
+        <Button
+            android:id="@+id/btnXiazaiguanli"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/xiazaiguanli" />
+
+        <Button
+            android:id="@+id/btnLatestplay"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/latestplay" />
+    </LinearLayout>
+ 
+</RelativeLayout>

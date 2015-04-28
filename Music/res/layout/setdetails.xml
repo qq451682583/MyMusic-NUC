@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setting_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        style="@style/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <Button
+            android:id="@+id/setdetailsback"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/setmusicnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="设置"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <!-- 最外围的 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!-- 第一部分：功能设置 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/normal_shape"
+            android:orientation="vertical" >
+
+            <!-- 第一栏 -->
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_gravity="left"
+                    android:padding="10dip"
+                    android:src="@drawable/tab_settings" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="40dip"
+                    android:gravity="left"
+                    android:paddingTop="10dip"
+                    android:text="启动问候语"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ToggleButton
+                    android:id="@+id/settings_set_javascript_toggle_btn"
+                    android:layout_width="50dip"
+                    android:layout_height="30dip"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="6dip"
+                    android:layout_marginTop="6dip"
+                    android:background="@drawable/selector_butn_toggle"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+            </FrameLayout>
+
+           
+
+            
+          
+        </LinearLayout>
+
+        <!-- 第二部分 界面設置 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/normal_shape"
+            android:orientation="vertical" >
+
+            <!-- 第一栏 -->
+
+          <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_gravity="left"
+                    android:padding="10dip"
+                    android:src="@drawable/tab_settings" />
+
+                <TextView
+                    android:id="@+id/geiwohaoping"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="40dip"
+                    android:gravity="left"
+                    android:paddingTop="6dip"
+                    android:text="给我好评"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+   
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_grey" >
+            </LinearLayout>
+
+            <!-- part 2 -->
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_gravity="left"
+                    android:padding="10dip"
+                    android:src="@drawable/tab_settings" />
+
+                <TextView
+                    android:id="@+id/jianchagengxin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="40dip"
+                    android:gravity="left"
+                    android:paddingTop="6dip"
+                    android:text="检查更新"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_grey" >
+            </LinearLayout>
+            
+             <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_gravity="left"
+                    android:padding="10dip"
+                    android:src="@drawable/tab_settings" />
+
+                <TextView
+                    android:id="@+id/setguanyu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="40dip"
+                    android:gravity="left"
+                    android:paddingTop="6dip"
+                    android:text="关于"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_grey" >
+            </LinearLayout>
+
+            <!-- 第三栏 -->
+            <!-- 等等。。。 -->
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
