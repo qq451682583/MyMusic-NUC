@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:background="#E9D9C2"
-    android:layout_height="fill_parent" >
+    android:layout_height="fill_parent"
+    android:background="#E9D9C2" >
 
     <LinearLayout
         android:id="@+id/linearLayout1"
@@ -54,11 +54,12 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:editable="true"
-            android:hint="请输入密码" 
-            android:inputType="textPassword"/>
+            android:hint="请输入密码"
+            android:inputType="textPassword" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/linearLayout2"
@@ -71,13 +72,22 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:background="@drawable/denglu" />
+
         <Button
             android:id="@+id/btnZhuce"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginTop="5dp"
             android:background="@drawable/zhuce" />
-
     </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_marginTop="35dp"
+        android:text="GitHub" />
 
 </RelativeLayout>
